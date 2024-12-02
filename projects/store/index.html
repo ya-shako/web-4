@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кофейня</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Оформление заказа</h1>
+    <div class="customer-info">
+      <input type="text" id="first-name" placeholder="Имя">
+      <input type="text" id="last-name" placeholder="Фамилия">
+    </div>
+    <div class="product-lists">
+      <div class="product-list">
+        <h2>Напитки</h2>
+        <div class="product">
+          <label>
+            <input type="checkbox" class="product-checkbox" data-price="150">
+            Капучино (150 руб.)
+          </label>
+          <input type="number" class="product-quantity" value="0" min="0" placeholder="Количество">
+        </div>
+        <div class="product">
+          <label>
+            <input type="checkbox" class="product-checkbox" data-price="100">
+            Эспрессо (100 руб.)
+          </label>
+          <input type="number" class="product-quantity" value="0" min="0" placeholder="Количество">
+        </div>
+        <div class="product">
+          <label>
+            <input type="checkbox" class="product-checkbox" data-price="200">
+            Латте (200 руб.)
+          </label>
+          <input type="number" class="product-quantity" value="0" min="0" placeholder="Количество">
+        </div>
+      </div>
+      <div class="product-list">
+        <h2>Десерты</h2>
+        <div class="product">
+          <label>
+            <input type="checkbox" class="product-checkbox" data-price="300">
+            Чизкейк (300 руб.)
+          </label>
+          <input type="number" class="product-quantity" value="0" min="0" placeholder="Количество">
+        </div>
+        <div class="product">
+          <label>
+            <input type="checkbox" class="product-checkbox" data-price="250">
+            Шоколадный торт (250 руб.)
+          </label>
+          <input type="number" class="product-quantity" value="0" min="0" placeholder="Количество">
+        </div>
+        <div class="product">
+          <label>
+            <input type="checkbox" class="product-checkbox" data-price="150">
+            Маффин (150 руб.)
+          </label>
+          <input type="number" class="product-quantity" value="0" min="0" placeholder="Количество">
+        </div>
+      </div>
+    </div>
+    <div class="summary">
+      <p><strong>Итого:</strong> <span id="total-amount">0</span> руб.</p>
+    </div>
+    <button id="submit-order">Оформить заказ</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

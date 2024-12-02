@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товары</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Выбор товаров</h1>
+    <form id="product-form">
+      <div class="product">
+        <label>
+          <input type="checkbox" name="product" value="100">
+          Товар 1 (100 руб.)
+        </label>
+      </div>
+      <div class="product">
+        <label>
+          <input type="checkbox" name="product" value="200">
+          Товар 2 (200 руб.)
+        </label>
+      </div>
+      <div class="product">
+        <label>
+          <input type="checkbox" name="product" value="300">
+          Товар 3 (300 руб.)
+        </label>
+      </div>
+      <button type="button" id="calculate-btn">Выбрать</button>
+    </form>
+    <div class="result">
+      <strong>Общая стоимость:</strong> <span id="total-cost">0</span> руб.
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
